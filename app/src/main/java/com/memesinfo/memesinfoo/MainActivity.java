@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Se crea el fragment con el container
         getSupportFragmentManager()
                 .beginTransaction().replace (R.id.container, new ListadoFragment ())
                 .commit ();
